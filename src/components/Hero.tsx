@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-primary relative overflow-hidden">
       <div className="container-custom relative z-10">
@@ -29,6 +32,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-primary"
+              onClick={() => navigate('/dashboard')}
             >
               Get Started
             </motion.button>

@@ -19,3 +19,18 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
+
+/* Custom Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Checkbox */
+input[type="checkbox"] {
+  @apply rounded border-gray-600 text-accent focus:ring-accent;
+}
